@@ -1,0 +1,17 @@
+# Compute VIF values
+rsq_hp = smf.ols('HP~WT+VOL+SP',data=cars).fit().rsquared
+vif_hp = 1/(1-rsq_hp)
+
+rsq_wt = smf.ols('WT~HP+VOL+SP',data=cars).fit().rsquared  
+vif_wt = 1/(1-rsq_wt) 
+
+rsq_vol = smf.ols('VOL~WT+SP+HP',data=cars).fit().rsquared  
+vif_vol = 1/(1-rsq_vol) 
+
+rsq_sp = smf.ols('SP~WT+VOL+HP',data=cars).fit().rsquared  
+vif_sp = 1/(1-rsq_sp) 
+
+# Storing vif values in a data frame
+d1 = {'Variables':['Hp','WT','VOL','SP'],'VIF':[vif_hp,vif_wt,vif_vol,vif_sp]}
+Vif_frame = pd.DataFrame(d1)  
+Vif_frame

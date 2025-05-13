@@ -1,0 +1,12 @@
+#### Comparison of models
+                     
+
+| Metric         | Model 1 | Model 2 | Model 3 |
+|----------------|---------|---------|---------|
+| R-squared      | 0.771   | 0.770   | 0.885   |
+| Adj. R-squared | 0.758   | 0.761   | 0.880   |
+| MSE            | 18.89   | 18.91   | 8.68    |
+| RMSE           | 4.34    | 4.34    | 2.94    |
+
+
+- **From the above comparison table it is observed that model3 is the best among all with superior performance metrics**

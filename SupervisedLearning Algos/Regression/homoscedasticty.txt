@@ -1,0 +1,13 @@
+def get_standardized_values( vals ):
+    return (vals - vals.mean())/vals.std()
+
+
+
+plt.figure(figsize=(6,4))
+plt.scatter(get_standardized_values(model3.fittedvalues),
+            get_standardized_values(model3.resid))
+
+plt.title('Residual Plot')
+plt.xlabel('Standardized Fitted values')
+plt.ylabel('Standardized residual values')
+plt.show()
