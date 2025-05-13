@@ -1,0 +1,1 @@
+streamlit run "C:\Users\Gaurav\OneDrive\Desktop\Vitapredict\Multiple disease predict.py"
