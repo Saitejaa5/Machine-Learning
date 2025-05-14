@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Segmentation</title>
+</head>
+<body>
+    <h2>Enter Customer Details</h2>
+    <form action="{{ url_for('predict') }}" method="post">
+        <input type="text" name="Income" placeholder="Income" required><br>
+        <input type="text" name="Recency" placeholder="Recency (Days since last purchase)" required><br>
+        <input type="text" name="MntWines" placeholder="Amount spent on Wines" required><br>
+        <input type="text" name="MntFruits" placeholder="Amount spent on Fruits" required><br>
+        <input type="text" name="MntMeatProducts" placeholder="Amount spent on Meat" required><br>
+        <input type="text" name="MntFishProducts" placeholder="Amount spent on Fish" required><br>
+        <input type="text" name="MntSweetProducts" placeholder="Amount spent on Sweets" required><br>
+        <input type="text" name="MntGoldProds" placeholder="Amount spent on Gold" required><br>
+        <input type="text" name="NumDealsPurchases" placeholder="Number of Deals Purchased" required><br>
+        <input type="text" name="NumWebPurchases" placeholder="Number of Web Purchases" required><br>
+        <input type="text" name="NumCatalogPurchases" placeholder="Number of Catalog Purchases" required><br>
+        <input type="text" name="NumStorePurchases" placeholder="Number of Store Purchases" required><br>
+        <input type="text" name="NumWebVisitsMonth" placeholder="Number of Web Visits per Month" required><br>
+        <input type="text" name="Age" placeholder="Age" required><br>
+        <input type="text" name="Children" placeholder="Number of Children" required><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
